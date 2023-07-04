@@ -1,0 +1,31 @@
+html {
+  width:100vw;
+  box-sizing: border-box;
+}
+.about-me {
+  width: 100%;
+  overflow-x: hidden;
+}
+.header-pic {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  margin: .3rem;
+}
+.draw {
+  position: absolute;
+  top: -2300px;
+  left: -600px;
+  background-color: aqua;
+  height: 1920px;
+  
+  width: 5920px;
+  z-index: -1;
+  rotate: -20deg;
+}
+.contact-me {
+  background-color: aqua;
+}
+.my-links {
+
+}
