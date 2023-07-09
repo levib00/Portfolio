@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <!--Need to add links to the links-->
 </head>
 <body>
   <div class="about-me">
     <div class="float-image">
       <img class="header-pic" src="./styles/assets/images/computer-user1.jpg">
       <h1 class="my-name">Levi Burke</h1>
-      <h2 class="about-me-header">About me</h2>
-      <p class="about-me-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus imperdiet, iaculis purus vitae, molestie felis. Donec vel nunc id lacus facilisis commodo. Aenean faucibus tortor vitae dolor vestibulum ultrices. In tempus gravida tortor sit amet placerat. Suspendisse scelerisque fermentum nulla, at volutpat nibh blandit id. Proin feugiat finibus arcu posuere egestas. Proin venenatis eget mauris nec luctus. Duis quis nisi a nibh ultricies bibendum id in diam. Etiam eget porta purus. Suspendisse in metus ut libero suscipit lacinia quis at sapien. Proin finibus vehicula bibendum. Maecenas et nisl non nunc bibendum tristique. </p>
+      <div class="about-me-section">
+        <h2 class="about-me-header">About me</h2>
+        <p class="about-me-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget purus imperdiet, iaculis purus vitae, molestie felis. Donec vel nunc id lacus facilisis commodo. Aenean faucibus tortor vitae dolor vestibulum ultrices. In tempus gravida tortor sit amet placerat. Suspendisse scelerisque fermentum nulla, at volutpat nibh blandit id. Proin feugiat finibus arcu posuere egestas. </p>
+      </div>
     </div><div class="my-links">
       <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" >
       <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
@@ -111,14 +114,15 @@
         <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
       </div>
     </div>
-    <img
-     class="wide"
-      srcset="./styles/assets/images/computer-user-wide-800w.jpg 800w, ./styles/assets/images/computer-user-wide-1000w.jpg 1000w, ./styles/assets/images/computer-user-wide-1500w.jpg 1500w"
-      sizes="(max-width: 480px) 800px, 
-        (max-width: 1000px) 1000px,
-        1500px"
-      alt=""
-      ><!-- going to have to change this to be srcset -->
+    <div class="center-wide">
+      <img
+       class="wide"
+        srcset="./styles/assets/images/computer-user-wide-800w.jpg 800w, ./styles/assets/images/computer-user-wide-1000w.jpg 1000w, ./styles/assets/images/computer-user-wide-1400w.jpg 1400w"
+        sizes="(max-width: 480px) 800px,
+          (max-width: 1000px) 1000px,
+          1400px"
+        alt="">
+    </div>
   </div>
   <div class="draw">
   </div>
