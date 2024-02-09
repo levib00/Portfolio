@@ -33,7 +33,7 @@ body {
   height: 0px;
   margin: 0;
 }
-.about-me > .my-links, .contact-info > .my-links {
+.about-me > .my-links-container, .contact-info > .my-links-container {
   display: flex;
   justify-content: center;
 }
@@ -60,7 +60,7 @@ h2 {
   background-color: #0891b2;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
 }
-.my-links {
+.my-links-container {
   display: flex;
   gap: 18px;
 }
@@ -85,14 +85,31 @@ h2 {
 .project-card {
   display: grid;
   grid-template-rows: 3fr 2fr;
-  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .3)
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .3);
+  background-color: #fff;
 }
-.project-card-screenshot {
+.spacing {
+  margin: 0 auto
+}
+.project-card-screenshot-container {
   display: flex;
   align-items: center;
   background-color: blueviolet;
   justify-content: center;
   font-size: 1.6rem;
+}
+.project-card-screenshot {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+
+}
+.project-screenshot-link {
+  height: 100%;
+  width: 100%;  
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .project-header {
   display: flex;
@@ -103,7 +120,7 @@ h2 {
   margin: 20px 0;
   font-family: 'Playfair Display', sans-serif;
 }
-.project-header > .my-links > .logo {
+.project-header > .my-links-container > a > .logo {
   width: 2.3rem;
 }
 .project-info {
@@ -146,7 +163,7 @@ h2 {
   .about-me {
     margin-top: 120px;
   }
-  .about-me > .my-links {
+  .about-me > .my-links-container {
     display: none;
   }
   .float-image {
@@ -190,7 +207,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
   }
-  .contact-info > .my-links {
+  .contact-info > .my-links-container {
     padding-right: 80px;
   }
   .draw {
@@ -250,12 +267,30 @@ h2 {
     width:93%;
     margin: 0 auto -10px auto;
   }
-  .about-me > .my-links {
+  .current-works {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .wips {
+    background-color: #0891b2;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: unset !important;
+    padding-bottom: 0;
+  }
+  .current-project {
+    grid-column-start: 2;
+  }
+  .about-me > .my-links-container {
     box-sizing: border-box;
     display: unset;
     margin: -72px 90px 0 auto;
     float: right;
   } 
+  .my-links {
+    display: flex;
+    align-items: center;
+  }
   .my-name {
     top: 72vh;
     width: 57vh;
